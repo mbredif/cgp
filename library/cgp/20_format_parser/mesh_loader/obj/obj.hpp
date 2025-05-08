@@ -6,11 +6,11 @@ namespace cgp
 {
     /** Save a mesh in .obj file
     * Note that OBJ format doesn't stores per-vertex color */
-    void save_file_obj(std::string const& filename, mesh const& m);
+    void mesh_save_file_obj(std::string const& filename, mesh const& m);
 
 
     /** Minimalist export of triangle soup */
-    void save_file_obj(std::string const& filename, std::vector<vec3> const& position, std::vector<vec3> const& normal);
+    void mesh_save_file_obj(std::string const& filename, std::vector<vec3> const& position, std::vector<vec3> const& normal);
 
     /** Load a mesh stored as .obj in the filename.
     * Notes: 
