@@ -44,7 +44,7 @@ namespace cgp
         stream.close();
     }
 
-    void save_file_obj(std::string const& filename, std::vector<vec3> const& position, std::vector<vec3> const& normal)
+    void mesh_save_file_obj(std::string const& filename, std::vector<vec3> const& position, std::vector<vec3> const& normal)
     {
         std::ofstream stream(filename, std::ofstream::out);
         assert_cgp(stream.is_open(), "Cannot open file " + str(filename));
